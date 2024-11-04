@@ -4,9 +4,52 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue</title>
+    <title>Math</title>
   </head>
   <body>
+    <div class="box">
+      <div class="Cosine">
+          <div class="bold">Cosine Law</div>
+          <form id="calculate">
+              <label for="sideA"> Side A</label>
+              <input type="text" id="sideA" name="a">
+              <label for="sideB"> Side B</label>
+              <input type="text" id="sideB" name="b">
+              <label for="angleC"> Angle C</label>
+              <input type="text" id="angleC" name="c">
+              <div>Side C(Result):</div>
+              <div class="result" id="result"></div>
+              <br>
+              <button type="submit">Calculate</button>
+          </form>
+      </div>
+
+      <div class="Asymptote">
+          <div class="bold"> Asymptote Finder </div>
+          <form id="calculate2">
+              <label for="mValue"> m value</label>
+              <input type="text" id="mValue" name="m">
+              <label for="nValue"> n value</label>
+              <input type="text" id="nValue" name="n">
+              <div>Asymptote Type(Result):</div>
+              <div class="result" id="result2"></div>
+              <br>
+              <button type="submit">Calculate</button>
+          </form>
+      </div>
+  </div>
+  <br>
+  <div class="Gregory">
+      <div class="bold">Gregory-Leibniz Pi Approximation</div>
+      <form id="calculate3">
+          <label for="nValue2"> n value</label>
+          <input type="text" id="nValue2" name="n2">
+          <div>Pi Approximation(Result):</div>
+          <div class="result grey" id="result3">result</div>
+          <br>
+          <button type="submit">Calculate</button>
+      </form>
+  </div>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
