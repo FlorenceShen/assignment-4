@@ -1,7 +1,5 @@
 <script>
 const form = document.getElementById('calculate')
-
-  event.preventDefault();
   const a = parseFloat(document.getElementById('sideA').value);
   const b = parseFloat(document.getElementById('sideB').value);
   const angleC = parseFloat(document.getElementById('angleC').value) * (Math.PI / 180);
@@ -14,6 +12,7 @@ const form = document.getElementById('calculate')
   resultElement.style.color = 'black';
   resultElement.innerHTML = result.toFixed(2);
   form.addEventListener('submit', (event) => {
+    event.preventDefault();
 });
 </script>
 
@@ -34,5 +33,3 @@ const form = document.getElementById('calculate')
           </form>
       </div>
 </template>
-<style>
-</style>

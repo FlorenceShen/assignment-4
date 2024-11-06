@@ -1,6 +1,5 @@
 <script>
 const form2 = document.getElementById('calculate2');
-  event.preventDefault();
   const m = parseFloat(document.getElementById('mValue').value);
   const n = parseFloat(document.getElementById('nValue').value);
   let resultMessage = "";
@@ -17,6 +16,7 @@ const form2 = document.getElementById('calculate2');
   resultElement.style.color = 'black';
   resultElement.innerHTML = resultMessage;
   form2.addEventListener('submit', (event) => {
+    event.preventDefault();
 })
 </script>
 
@@ -35,5 +35,3 @@ const form2 = document.getElementById('calculate2');
           </form>
       </div>
 </template>
-<style>
-</style>

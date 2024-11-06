@@ -1,7 +1,5 @@
 <script>
 const form3 = document.getElementById('calculate3');
-
-  event.preventDefault();
   const n2 = parseInt(document.getElementById('nValue2').value);
   let sum = 0;
 
@@ -14,6 +12,7 @@ const form3 = document.getElementById('calculate3');
   resultElement.style.color = 'black';
   resultElement.innerHTML = result3.toFixed(8);
   form3.addEventListener('submit', (event) => {
+    event.preventDefault();
 })
 </script>
 
@@ -30,5 +29,3 @@ const form3 = document.getElementById('calculate3');
       </form>
   </div>
 </template>
-<style>
-</style>
