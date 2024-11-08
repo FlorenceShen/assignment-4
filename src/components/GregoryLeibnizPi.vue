@@ -1,6 +1,6 @@
 <script>
 const form3 = document.getElementById('calculate3');
-  const n2 = parseInt(document.getElementById('nValue2').value);
+  const n2 = ref(0);
   let sum = 0;
 
   for (let i = 0; i <= n2; i++) {
@@ -22,7 +22,7 @@ const form3 = document.getElementById('calculate3');
       <div class="bold">Gregory-Leibniz Pi Approximation</div>
       <form id="calculate3">
           <label for="nValue2"> n value</label>
-          <input type="text" id="nValue2" name="n2">
+          <input type="text" v-model="nValue2" name="n2">
           <div>Pi Approximation(Result):</div>
           <div class="result grey" id="result3">result</div>
           <br>

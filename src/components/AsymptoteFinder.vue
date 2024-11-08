@@ -1,7 +1,7 @@
 <script>
 const form2 = document.getElementById('calculate2');
-  const m = parseFloat(document.getElementById('mValue').value);
-  const n = parseFloat(document.getElementById('nValue').value);
+  const m = ref(0);
+  const n = ref(0);
   let resultMessage = "";
   if (m === n)
     resultMessage = "The asymptote is horizontal";
@@ -26,9 +26,9 @@ const form2 = document.getElementById('calculate2');
           <div class="bold"> Asymptote Finder </div>
           <form id="calculate2">
               <label for="mValue"> m value</label>
-              <input type="text" id="mValue" name="m">
+              <input type="text" v-model="mValue" name="m">
               <label for="nValue"> n value</label>
-              <input type="text" id="nValue" name="n">
+              <input type="text" v-model="nValue" name="n">
               <div>Asymptote Type(Result):</div>
               <div class="result" id="result2"></div>
               <br>
