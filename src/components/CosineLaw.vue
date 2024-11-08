@@ -17,12 +17,6 @@ const form = document.getElementById('calculate')
 </script>
 
 <template>
-  <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
 <body>
 <div class="Cosine box">
           <div class="bold">Cosine Law</div>
