@@ -1,7 +1,7 @@
 <script setup>
 import CosineLaw from './components/CosineLaw.vue'
 import AsymptoteFinder from './components/AsymptoteFinder.vue'
-import GregoryLeibnizPi from './components/GregoryLeibnizPi.vue'
+//import GregoryLeibnizPi from './components/GregoryLeibnizPi.vue'
 </script>
 
 <template>
@@ -13,13 +13,12 @@ import GregoryLeibnizPi from './components/GregoryLeibnizPi.vue'
   </head>
   <CosineLaw/>
   <AsymptoteFinder/>
-  <GregoryLeibnizPi/>
+ 
 </template>
 
 <style scoped>
 body {
   background: linear-gradient(to right, #e0e9fa, #ffffff);
-  font-family: "Poppins", sans-serif;
 }
 
 .box {
@@ -36,6 +35,8 @@ label {
 }
 
 input {
+  display: flex;
+  flex-direction: column;
   font-size: 15px;
   border-radius: 4px;
   border: 1px solid #7e7e7e;
@@ -56,6 +57,7 @@ button {
 }
 
 .Cosine, .Asymptote, .Gregory {
+  font-family: "Poppins", sans-serif;
   width: 40%;
   padding: 12px 20px;
   margin: 8px 15px 0;
