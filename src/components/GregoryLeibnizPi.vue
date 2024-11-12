@@ -3,26 +3,27 @@ import { ref } from 'vue';
 const n2 = ref(0);
 let sum = ref(0);
 let i = ref(0)
-let result = ref("")
+let result = ref()
 
-function Gregory{
-for (i.value <= n2.value; i.value++) {
-  sum.value += Math.round(i.value % 2 === 0 ? 1 : -1) / (2 * i.value + 1).toFixed(8);
+function gregory(){
+  for (i.value <= n2.value; i.value++;) {
+    sum.value += Math.round(i.value % 2 === 0 ? 1 : -1) / (2 * i.value + 1).toFixed(8);
+  }
+  result.value = 4 * sum.value;
 }
-}
-const result.value = 4 * sum.value;
 
 </script>
 
 <template>
+
   <body>
     <div class="Gregory">
       <div class="bold">Gregory-Leibniz Pi Approximation</div>
-      <form @submit.prevent="Gregory()" id="calculate3">
+      <form @submit.prevent="gregory()" id="calculate3">
         <label for="nValue2"> n value</label>
         <input type="text" v-model="nValue2" name="n2">
         <div>Pi Approximation(Result):</div>
-        <div class="result grey" id="result3">result</div>
+        <input class="result grey" v-model="result" readonly>result</input>
         <br>
         <button type="submit">Calculate</button>
       </form>

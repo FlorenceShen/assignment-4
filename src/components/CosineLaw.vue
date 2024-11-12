@@ -11,6 +11,7 @@ function cosine() {
 </script>
 
 <template>
+  <body>
   <div class="Cosine box">
     <div class="bold">Cosine Law</div>
     <form @submit.prevent="cosine()" id="calculate">
@@ -26,4 +27,5 @@ function cosine() {
       <button type="submit">Calculate</button>
     </form>
   </div>
+  </body>
 </template>
