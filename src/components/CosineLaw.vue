@@ -11,10 +11,9 @@ function cosine() {
 </script>
 
 <template>
-  <body>
   <div class="Cosine box">
     <div class="bold">Cosine Law</div>
-    <form @submit.prevent="cosine()" id="calculate">
+    <form @submit.prevent="cosine()">
       <label for="sideA"> Side A</label>
       <input type="text" v-model="a" name="a">
       <label for="sideB"> Side B</label>
@@ -27,5 +26,4 @@ function cosine() {
       <button type="submit">Calculate</button>
     </form>
   </div>
-  </body>
 </template>

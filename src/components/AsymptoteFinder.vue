@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import { ref } from 'vue';
 const m = ref();
 const n = ref();
@@ -18,11 +18,9 @@ function asymptoteFinder() {
 </script>
 
 <template>
-
-  <body>
     <div class="Asymptote box">
       <div class="bold"> Asymptote Finder </div>
-      <form @submit.prevent="asymptoteFinder()" id="calculate2">
+      <form @submit.prevent="asymptoteFinder()">
         <label for="mValue"> m value</label>
         <input type="text" v-model="m" name="m">
         <label for="nValue"> n value</label>
@@ -33,5 +31,4 @@ function asymptoteFinder() {
         <button type="submit">Calculate</button>
       </form>
     </div>
-  </body>
 </template>

@@ -5,19 +5,12 @@ import GregoryLeibnizPi from './components/GregoryLeibnizPi.vue'
 </script>
 
 <template>
-
   <CosineLaw/>
   <AsymptoteFinder/>
   <GregoryLeibnizPi/>
-  
- 
 </template>
 
 <style scoped>
-body {
-  background: linear-gradient(to right, #e0e9fa, #ffffff);
-}
-
 .box {
   display: flex;
 }
