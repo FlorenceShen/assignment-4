@@ -13,6 +13,7 @@ import GregoryLeibnizPi from './components/GregoryLeibnizPi.vue'
 <style scoped>
 .box {
   display: flex;
+  flex-direction: column;
 }
 
 .bold {
@@ -21,12 +22,9 @@ import GregoryLeibnizPi from './components/GregoryLeibnizPi.vue'
 
 label {
   display: flex;
-  flex-direction: column;
 }
 
 input {
-  display: flex;
-  flex-direction: column;
   font-size: 15px;
   border-radius: 4px;
   border: 1px solid #7e7e7e;
@@ -63,7 +61,6 @@ button {
 }
 
 .result {
-  display: flex;
   font-size: 17px;
   padding: 1px 20px;
   height: 25px;
