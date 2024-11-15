@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import { ref } from 'vue';
 const n2 = ref(0);
 let sum = ref(0);
@@ -22,7 +22,7 @@ const result.value = 4 * sum.value;
         <label for="nValue2"> n value</label>
         <input type="text" v-model="nValue2" name="n2">
         <div>Pi Approximation(Result):</div>
-        <div class="result grey" id="result3">result</div>
+        <input class="result grey" v-model="result" readonly>result</input>
         <br>
         <button type="submit">Calculate</button>
       </form>

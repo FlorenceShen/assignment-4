@@ -15,9 +15,6 @@ import { ref } from 'vue';
     resultMessage.value = asymptote[degree - 1];
   }
   }
-  // form2.addEventListener('submit', (event) => {
-  //   event.preventDefault();
-//})
 </script>
 
 <template>
