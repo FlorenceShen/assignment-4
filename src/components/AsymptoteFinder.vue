@@ -26,7 +26,7 @@ function asymptoteFinder() {
         <label for="nValue"> n value</label>
         <input type="text" v-model="n" name="n">
         <div>Asymptote Type(Result):</div>
-        <input class="result" v-model="resultMessage" readonly></input>
+        <input class="result" :value="resultMessage" readonly></input>
         <br>
         <button type="submit">Calculate</button>
       </form>

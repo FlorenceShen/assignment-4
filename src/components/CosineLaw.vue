@@ -2,11 +2,11 @@
 import { ref } from 'vue';
 const a = ref();
 const b = ref();
-const angleC = ref(0);
+const angleC = ref();
 const c = ref();
 
 function cosine() {
-  c.value = Math.round(Math.sqrt(a.value * a.value + b.value * b.value - 2 * a.value * b.value * Math.cos(angleC.value * (Math.PI / 180)))).toFixed(3);
+  c.value = (Math.sqrt(a.value * a.value + b.value * b.value - 2 * a.value * b.value * Math.cos(angleC.value * (Math.PI / 180)))).toFixed(3);
 }
 </script>
 
@@ -21,7 +21,7 @@ function cosine() {
       <label for="angleC"> Angle C</label>
       <input type="text" v-model="angleC" name="c">
       <div>Side C(Result):</div>
-      <input class="result" v-model="c" readonly></input>
+      <input class="result" :value="c" readonly></input>
       <br>
       <button type="submit">Calculate</button>
     </form>
