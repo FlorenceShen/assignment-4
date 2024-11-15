@@ -5,25 +5,15 @@ import GregoryLeibnizPi from './components/GregoryLeibnizPi.vue'
 </script>
 
 <template>
-<!DOCTYPE html>
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-  </head>
   <CosineLaw/>
   <AsymptoteFinder/>
-  
- 
+  <GregoryLeibnizPi/>
 </template>
 
 <style scoped>
-body {
-  background: linear-gradient(to right, #e0e9fa, #ffffff);
-}
-
 .box {
   display: flex;
+  flex-direction: column;
 }
 
 .bold {
@@ -32,12 +22,9 @@ body {
 
 label {
   display: flex;
-  flex-direction: column;
 }
 
 input {
-  display: flex;
-  flex-direction: column;
   font-size: 15px;
   border-radius: 4px;
   border: 1px solid #7e7e7e;
@@ -74,7 +61,6 @@ button {
 }
 
 .result {
-  display: flex;
   font-size: 17px;
   padding: 1px 20px;
   height: 25px;
