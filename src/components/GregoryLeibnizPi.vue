@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+
 const n2 = ref();
 const result = ref();
 
@@ -19,7 +20,7 @@ function gregory() {
       <label for="nValue2"> n value</label>
       <input type="text" v-model="n2" name="n2">
       <div>Pi Approximation(Result):</div>
-      <input class="result" :value="result" readonly></input>
+      <input class="result" v-model="result" readonly></input>
       <br>
       <button type="submit">Calculate</button>
     </form>

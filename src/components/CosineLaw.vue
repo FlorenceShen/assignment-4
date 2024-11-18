@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+
 const a = ref();
 const b = ref();
 const angleC = ref();
@@ -21,7 +22,7 @@ function cosine() {
       <label for="angleC"> Angle C</label>
       <input type="text" v-model="angleC" name="c">
       <div>Side C(Result):</div>
-      <input class="result" :value="c" readonly></input>
+      <input class="result" v-model="c" readonly></input>
       <br>
       <button type="submit">Calculate</button>
     </form>
